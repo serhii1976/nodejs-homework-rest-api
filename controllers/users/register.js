@@ -2,7 +2,7 @@ const { Conflict } = require("http-errors");
 const { v4: uuidv4 } = require("uuid");
 const bcrypt = require("bcryptjs");
 const gravatar = require("gravatar");
-const { sendEmail } = require("../../helpers");
+const { sendEmail } = require("../../services");
 const { User } = require("../../models");
 
 const { BASE_URL } = process.env;
